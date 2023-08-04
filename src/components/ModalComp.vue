@@ -2,7 +2,7 @@
   <transition>
     <div v-show="modalActive" class="Modal">
       <transition name="modal-animation-inner">
-        <div style="width: 40%; margin: auto">
+        <div class="wi">
           <div
             v-show="modalActive"
             class="modal-inner"
@@ -43,5 +43,14 @@ export default {
   justify-content: center;
   position: fixed;
   top: 0;
+}
+.wi {
+  width: 40%;
+  margin: auto;
+}
+@media only screen and (max-width: 991px) {
+  .wi {
+    width: 90%;
+  }
 }
 </style>

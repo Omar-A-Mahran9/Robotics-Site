@@ -1,5 +1,5 @@
 <template>
-  <section class="container pt-5">
+  <section class="container pt-5" style="margin-bottom: 200px">
     <div class="d-flex gap-3 mb-4 mt-3 pt-5">
       <img src="@/assets/photos/home(2).svg" />
       <a href="" class="link"> &nbsp;اتصل بنا</a>

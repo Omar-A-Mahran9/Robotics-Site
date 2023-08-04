@@ -19,12 +19,10 @@
       </div>
     </div>
     <div>
-      <div class="row justify-content-center align">
+      <div class="row justify-content-between align-items-center">
         <div class="col">
-          <div style="position: relative; width: 594px">
-            <video class="vid" loop muted ref="video" width="594">
-              <source src="@/assets/videos/e_e.mp4" type="video/mp4" />
-            </video>
+          <div class="mb-4" style="position: relative">
+            <img class="vid" src="@/assets/photos/vidCover.png" />
             <div
               id="overlay"
               style="
@@ -37,7 +35,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 335px;
+                height: 99%;
                 border-radius: 16px;
                 opacity: 0.7;
                 z-index: 9;
@@ -45,7 +43,7 @@
             ></div>
             <button
               v-if="!isPlaying || !isPaused"
-              @click="playVideo"
+              @click="toggleModal"
               ref="button"
               class="center-button"
             >
@@ -58,7 +56,7 @@
         </div>
         <div class="col align-items-center">
           <div
-            class="d-flex gap-3 align-items-center justify-content-center mb-3"
+            class="d-flex align-items-center gap-2 justify-content-center mb-3"
           >
             <div
               class="card"
@@ -69,14 +67,23 @@
                 border-radius: 16px !important;
               "
             >
-              <video class="vid" loop muted width="310">
+              <iframe
+                class="vid"
+                width="100%"
+                src="https://www.youtube.com/embed/Xe-gFvBfZPc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <!-- <video class="vid" loop muted width="100%">
                 <source
                   src="@/assets/videos/مبادرة_التصنيع_الرياضي.mp4"
                   type="video/mp4"
                 />
                 <source src="movie.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
-              </video>
+              </video> -->
               <div class="card-body">
                 <p
                   class="card-text fw-bold"
@@ -85,9 +92,9 @@
                   السعودية تحقق المركز الأول في جائزة مشروع الابتكار
                 </p>
 
-                <div style="float: right">
+                <div class="day" style="float: right">
                   <img src="@/assets/photos/Vector2.svg" />
-                  <span style="font-size: 15px"> الثلاثاء 13 / 4 / 2023</span>
+                  <span style="font-size: 16px"> الثلاثاء 13 / 4 / 2023</span>
                 </div>
               </div>
             </div>
@@ -100,9 +107,18 @@
                 border-radius: 16px !important;
               "
             >
-              <video class="vid" loop muted width="310">
+              <iframe
+                class="vid"
+                width="100%"
+                src="https://www.youtube.com/embed/iUo7h7398jw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <!-- <video class="vid" loop muted width="100%">
                 <source src="@/assets/videos/Omar.mp4" type="video/mp4" />
-              </video>
+              </video> -->
               <!-- <button @click="playVideo1" class="center-button">
                 <img src="@/assets/photos/play-button.svg" />
               </button> -->
@@ -115,14 +131,14 @@
                   لدوري فيرست
                 </p>
 
-                <div style="float: right">
+                <div class="day" style="float: right">
                   <img src="@/assets/photos/Vector2.svg" />
                   <span style="font-size: 15px"> الثلاثاء 13 / 4 / 2023</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center mt-3">
             <a href="#"><img src="@/assets/photos/RightArrow.svg" /></a>
             <a href="#"><img src="@/assets/photos/leftarrrow.svg" /></a>
           </div>
@@ -130,9 +146,43 @@
       </div>
     </div>
   </section>
+  <Modal @close="toggleModal" :modalActive="modalActive">
+    <div style="position: relative">
+      <div class="modal-content">
+        <iframe
+          class="vid"
+          width="100%"
+          height="400"
+          src="https://www.youtube-nocookie.com/embed/rI3FiAtMBNk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <!-- <video class="vid" loop autoplay muted controls ref="video">
+          <source src="@/assets/videos/e_e.mp4" type="video/mp4" />
+        </video> -->
+      </div>
+    </div>
+  </Modal>
 </template>
 <script>
+import Modal from "@/components/ModalComp.vue";
+import { ref } from "vue";
 export default {
+  components: {
+    Modal,
+  },
+  setup() {
+    const modalActive = ref(false);
+    const toggleModal = () => {
+      modalActive.value = !modalActive.value;
+    };
+    return {
+      modalActive,
+      toggleModal,
+    };
+  },
   data() {
     return {
       isPlaying: false,
@@ -164,6 +214,7 @@ export default {
 }
 .vid {
   border-radius: 16px;
+  width: 100%;
 }
 .vid:hover {
   cursor: pointer;
@@ -173,9 +224,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.shp {
-  display: none;
-}
+
 .center-button {
   background-color: transparent;
   border: none;
@@ -183,5 +232,22 @@ export default {
   right: 40%;
   top: 36%;
   z-index: 99;
+}
+@media only screen and (max-width: 991px) {
+  .center-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    z-index: 99;
+  }
+  .day {
+    scale: 70%;
+    transform: translateX(40px);
+  }
+  .shp {
+    display: none;
+  }
 }
 </style>

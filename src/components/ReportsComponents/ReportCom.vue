@@ -6,7 +6,7 @@
         <a href="" class="link"> &nbsp; التقارير </a>
       </div>
       <div
-        class="card mb-5"
+        class="card mb-5 respom"
         style="
           width: 50%;
           background: white;
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div
-        class="card mb-5"
+        class="card mb-5 respom"
         style="
           width: 50%;
           background: white;
@@ -110,5 +110,11 @@ a {
 }
 .man {
   padding-top: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+  .respom {
+    width: 100% !important;
+  }
 }
 </style>

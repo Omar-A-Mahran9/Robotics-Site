@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-content-center mt-5">
-    <div class="col-3 mb-5">
+  <div class="row justify-content-center mt-5" style="margin-bottom: 200px">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -11,14 +11,14 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img1.svg" />
+          <img width="100%" src="@/assets/photos/img1.svg" />
         </div>
         <div class="tit">
           <div
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="col-3 mb-5">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -44,14 +44,14 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img2.svg" />
+          <img width="100%" src="@/assets/photos/img2.svg" />
         </div>
         <div class="tit">
           <div
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -68,7 +68,7 @@
       </div>
     </div>
 
-    <div class="col-3 mb-5">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -79,14 +79,14 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img3.svg" />
+          <img width="100%" src="@/assets/photos/img3.svg" />
         </div>
         <div class="tit">
           <div
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -101,7 +101,7 @@
       </div>
     </div>
 
-    <div class="col-3 mb-5">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -112,14 +112,14 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img4.svg" />
+          <img width="100%" src="@/assets/photos/img4.svg" />
         </div>
         <div class="tit">
           <div
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -134,7 +134,7 @@
       </div>
     </div>
 
-    <div class="col-3 mb-5">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -145,14 +145,14 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img5.svg" />
+          <img width="100%" src="@/assets/photos/img5.svg" />
         </div>
         <div class="tit">
           <div
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -167,7 +167,7 @@
       </div>
     </div>
 
-    <div class="col-3 mb-5">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -178,14 +178,14 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img6.svg" />
+          <img width="100%" src="@/assets/photos/img6.svg" />
         </div>
         <div class="tit">
           <div
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -200,7 +200,7 @@
       </div>
     </div>
 
-    <div class="col-3 mb-5">
+    <div class="col-6 col-md-3 mb-5">
       <div class="card border-0">
         <div
           class=""
@@ -211,14 +211,15 @@
             border: none;
           "
         >
-          <img src="@/assets/photos/img4.svg" />
+          <img width="100%" src="@/assets/photos/img7.svg" />
         </div>
         <div class="tit">
           <div
+            class="tex"
             style="
               text-align: center;
               color: #306386;
-              font-size: 16px;
+
               font-family: Cairo;
               font-weight: 400;
               line-height: 32px;
@@ -234,7 +235,7 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .tit {
   position: absolute;
   width: 90%;
@@ -247,8 +248,28 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  top: 205px;
+  top: 270px;
   margin-right: 10px;
   box-shadow: 0px 4px 4px rgba(162.56, 162.56, 162.56, 0.25);
+}
+@media only screen and (max-width: 991px) {
+  .tit {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: absolute;
+    width: 100% !important;
+    font-size: 10px !important;
+    background: white;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    top: 120px;
+    margin-right: 1px;
+    box-shadow: 0px 4px 4px rgba(162.56, 162.56, 162.56, 0.25);
+  }
+  .tex {
+    font-size: 16px !important;
+  }
 }
 </style>

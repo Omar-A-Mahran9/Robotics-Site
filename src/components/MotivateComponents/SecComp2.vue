@@ -5,17 +5,18 @@
       <a href="" class="link"> &nbsp;الأخبار</a>
     </div>
     <div class="container" style="position: relative">
-      <img src="@/assets/photos/image111.svg" />
+      <img src="@/assets/photos/image111.svg" width="100%" />
     </div>
     <div
       style="
         margin-top: -300px;
         padding-top: 329px;
         padding-bottom: 276px;
+        height: 100%;
         background: linear-gradient(180deg, #022c48 0%, #306386 100%);
       "
     >
-      <div class="container" style="width: 72%">
+      <div class="container res">
         <h3
           style="
             margin-bottom: 23px;
@@ -71,4 +72,13 @@
     </div>
   </section>
 </template>
-<style scoped></style>
+<style scoped>
+.res {
+  width: 72%;
+}
+@media only screen and (max-width: 991px) {
+  .res {
+    width: 100%;
+  }
+}
+</style>

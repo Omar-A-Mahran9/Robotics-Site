@@ -1,13 +1,13 @@
 <template>
   <section class="container pt-5 Achie">
-    <div class="d-flex gap-3 mb-4 mt-3 pt-5">
+    <div class="d-flex gap-3 align-items-center mb-4 mt-3 pt-5">
       <img src="@/assets/photos/home(2).svg" />
-      <a href="" class="link"> &nbsp; الإنجازات والتكريمات </a>
+      <p class="lino mt-3">&nbsp; الإنجازات والتكريمات</p>
     </div>
     <div class="row justify-content-center align-items-center mb-5">
-      <div class="f-col col pe-4">
-        <div style="text-align: justify; width: 60%">
-          <h3 class="fw-bold mb-3" style="line-height: 50px">
+      <div class="col-12 col-md-6 mb-5 col pe-4">
+        <div class="re" style="text-align: justify">
+          <h3 class="fw-bold mb-3" style="line-height: 50px; color: #306386">
             السعودية تحقق المركز الأول في جائزة مشروع الابتكار
           </h3>
           <hr />
@@ -28,9 +28,9 @@
           </a>
         </div>
       </div>
-      <div class="s-col col">
+      <div class="col-12 col-md-6">
         <div style="position: relative">
-          <img src="@/assets/photos/Rectangle_5.svg" style="width: 500px" />
+          <img src="@/assets/photos/Rectangle_5.svg" style="width: 100%" />
           <div class="sticker">
             <img src="@/assets/photos/Vector_6.svg" />
             <h5 class="fw-bold text-white" style="margin-top: -70px">2023</h5>
@@ -38,26 +38,83 @@
         </div>
       </div>
     </div>
-
-    <div class="row align-items-center mt-5 mb-5">
-      <div class="s-col col">
+    <div class="sh row justify-content-center align-items-center mb-5">
+      <div class="col-12 col-md-6">
         <div style="position: relative">
-          <img src="@/assets/photos/Rectangle_5.svg" style="width: 500px" />
+          <img src="@/assets/photos/Rectangle_5.svg" style="width: 100%" />
           <div class="sticker">
             <img src="@/assets/photos/Vector_6.svg" />
             <h5 class="fw-bold text-white" style="margin-top: -70px">2023</h5>
           </div>
         </div>
       </div>
-      <div class="f-col col pe-5">
-        <div style="text-align: justify; width: 60%">
-          <h3 class="fw-bold mb-3" style="line-height: 50px">
+      <div class="col-12 col-md-6 mb-5 col pe-4">
+        <div class="re" style="text-align: justify">
+          <h3 class="fw-bold mb-3" style="line-height: 50px; color: #306386">
+            السعودية تحقق المركز الأول في جائزة مشروع الابتكار
+          </h3>
+          <hr />
+          <p class="mb-2">
+            نبارك للمنتخب السعودي المشارك في بطولة الفيرست ليغو الدولية
+            المفتوحة⁩ بالمملكة المغربية بتحقيقه المركز الأول في جائزة مشروع الا
+            ابتكار.
+          </p>
+          <a
+            style="
+              color: deeppink;
+              background-color: #b2ffda;
+              border-radius: 24px;
+              padding: 5px 35px 5px 35px;
+            "
+            ><img src="@/assets/photos/local.svg" width="10%" /> انجاز محلي
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="respon row justify-content-center align-items-center mb-5">
+      <div class="col-12 col-md-6 mb-5 col pe-4">
+        <div class="re" style="text-align: justify">
+          <h3 class="fw-bold mb-3" style="line-height: 50px; color: #306386">
             السعودية تحقق المركز الأول في جائزة مشروع الابتكار
           </h3>
           <hr />
           <p class="mb-2">
             نبارك للمنتخب السعودي المشارك في بطولة الفيرست ليغو الدولية المفتوحة
             بالمملكة المغربية بتحقيقه المركز الأول في جائزة مشروع الا ابتكار.
+          </p>
+          <a
+            style="
+              color: deeppink;
+              background-color: #b2ffda;
+              border-radius: 24px;
+              padding: 5px 35px 5px 35px;
+            "
+            ><img src="@/assets/photos/local.svg" width="10%" /> انجاز محلي
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div style="position: relative">
+          <img src="@/assets/photos/Rectangle_5.svg" style="width: 100%" />
+          <div class="sticker">
+            <img src="@/assets/photos/Vector_6.svg" />
+            <h5 class="fw-bold text-white" style="margin-top: -70px">2023</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center mb-5">
+      <div class="col-12 col-md-6 mb-5 col pe-4">
+        <div class="re" style="text-align: justify">
+          <h3 class="fw-bold mb-3" style="line-height: 50px; color: #306386">
+            السعودية تحقق المركز الأول في جائزة مشروع الابتكار
+          </h3>
+          <hr />
+          <p class="mb-2">
+            نبارك للمنتخب السعودي المشارك في بطولة الفيرست ليغو الدولية
+            المفتوحة⁩ بالمملكة المغربية بتحقيقه المركز الأول في جائزة مشروع الا
+            ابتكار.
           </p>
           <a
             style="
@@ -71,34 +128,9 @@
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="row align-items-center mt-5 mb-5">
-      <div class="f-col col pe-4">
-        <div style="text-align: justify; width: 60%">
-          <h3 class="fw-bold mb-3" style="line-height: 50px">
-            السعودية تحقق المركز الأول في جائزة مشروع الابتكار
-          </h3>
-          <hr />
-          <p class="mb-2">
-            نبارك للمنتخب السعودي المشارك في بطولة الفيرست ليغو الدولية المفتوحة
-            بالمملكة المغربية بتحقيقه المركز الأول في جائزة مشروع الا ابتكار.
-          </p>
-          <a
-            style="
-              float: right;
-              color: deeppink;
-              background-color: #b2e3ff;
-              border-radius: 24px;
-              padding: 5px 35px 5px 35px;
-            "
-            ><img src="@/assets/photos/www.svg" /> انجاز عالمي
-          </a>
-        </div>
-      </div>
-      <div class="s-col col">
+      <div class="col-12 col-md-6">
         <div style="position: relative">
-          <img src="@/assets/photos/Rectangle_5.svg" style="width: 500px" />
+          <img src="@/assets/photos/Rectangle_5.svg" style="width: 100%" />
           <div class="sticker">
             <img src="@/assets/photos/Vector_6.svg" />
             <h5 class="fw-bold text-white" style="margin-top: -70px">2023</h5>
@@ -128,6 +160,15 @@
             </div> -->
 </template>
 <style scoped>
+.lino {
+  color: #d63384;
+  border: 2px solid #d63384;
+  border-radius: 26px;
+  padding: 4px 20px;
+}
+.respon {
+  display: none;
+}
 .sticker {
   position: absolute;
   top: 0;
@@ -139,5 +180,30 @@
 }
 .Achie {
   margin-bottom: 200px;
+}
+.re {
+  width: 60%;
+}
+@media only screen and (max-width: 991px) {
+  .respon {
+    display: block;
+  }
+  .re {
+    width: 100% !important;
+  }
+  .sh {
+    display: none;
+  }
+  .sticker {
+    position: absolute;
+    top: -3px;
+
+    left: 0;
+    right: -120px;
+    width: 100%;
+    height: 10px;
+    scale: 50%;
+    border-radius: 50%;
+  }
 }
 </style>

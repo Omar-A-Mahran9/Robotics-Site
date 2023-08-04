@@ -1,5 +1,5 @@
 <template>
-  <section class="container pb-5">
+  <section class="container">
     <div>
       <video id="myVideo" autoplay loop muted width="100%">
         <source src="@/assets/videos/mainved.mp4" type="video/mp4" />
@@ -26,7 +26,7 @@
               color: #d2398d;
               font-size: 64px;
               font-weight: 700;
-              word-wrap: break-word;
+
               margin-top: -80px;
             "
             class="linee"
@@ -44,7 +44,6 @@
             font-size: 32px;
             font-family: Cairo;
             font-weight: 700;
-            word-wrap: break-word;
           "
         >
           <span class="respon" style="color: #d2398d; font-weight: bold"
@@ -67,7 +66,6 @@
             margin-bottom: -80px;
             margin-right: 400px;
             font-weight: 700;
-            word-wrap: break-word;
           "
         >
           ,,
@@ -122,7 +120,7 @@
     font-size: 25px !important;
   }
   .respon {
-    display: inline-block !important;
+    display: inline !important;
   }
   .tit2 {
     font-size: 25px !important;
@@ -142,7 +140,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 434px;
+    height: 450px;
     z-index: 99;
     object-fit: cover;
     background-color: rgba(0, 0, 0, 0.447);
@@ -152,7 +150,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 434px;
+    height: 450px;
     background-color: black;
     opacity: 0.7;
     z-index: 999;

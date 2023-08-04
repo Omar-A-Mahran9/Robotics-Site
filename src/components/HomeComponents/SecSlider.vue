@@ -1,6 +1,6 @@
 <template>
-  <div
-    class=""
+  <section
+    class="section"
     style="
       position: relative;
       background: linear-gradient(
@@ -10,7 +10,7 @@
       );
     "
   >
-    <div class="container pt-5 back1">
+    <div class="container back1 pt-5">
       <div class="d-flex justify-content-between align-items-center pt-5 mb-4">
         <div>
           <a class="senddd">الإنجازات والتكريمات</a>
@@ -22,69 +22,70 @@
           <div><img class="size" src="@/assets/photos/leftarrrow.svg" /></div>
         </div>
       </div>
-
-      <div class="row align-items-center">
-        <div class="col col-lg-6 mb-4">
-          <div class="colstyle" style="text-align: justify; width: 60%">
-            <h3 class="fw-bold mb-3 title" style="line-height: 50px">
-              {{ title }}
-            </h3>
-            <hr class="line" />
-            <p class="mb-4">
-              {{ description }}
-            </p>
-            <a
-              class="mgroup"
-              style="
-                float: right;
-                color: deeppink;
-                background-color: #b2e3ff;
-                border-radius: 24px;
-                padding: 5px 35px 5px 35px;
-              "
-              ><img src="@/assets/photos/www.svg" /> انجاز عالمي
-            </a>
-          </div>
-        </div>
-        <div class="col col-lg-6">
-          <swiper
-            :spaceBetween="30"
-            :centeredSlides="true"
-            :pagination="{
-              clickable: true,
-            }"
-            :navigation="true"
-            :modules="modules"
-            class="mySwiper"
-          >
-            <swiper-slide
-              v-for="text in swiperTextBase"
-              :key="text.description"
-            >
-              <div style="position: relative">
-                <img
-                  src="@/assets/photos/Rectangle_5.svg"
-                  style="width: 100%"
-                />
-                <div class="sticker">
-                  <img src="@/assets/photos/Vector_6.svg" />
-                  <h5 class="fw-bold text-white" style="margin-top: -70px">
-                    {{ text.title }}
-                  </h5>
+      <div class="">
+        <swiper
+          :spaceBetween="30"
+          :centeredSlides="true"
+          :pagination="{
+            clickable: true,
+          }"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
+          }"
+          :navigation="true"
+          :modules="modules"
+          class="mySwiper"
+        >
+          <swiper-slide v-for="text in swiperTextBase" :key="text.description">
+            <div class="row align-items-around">
+              <div class="col-12 col-lg-6 mb-4">
+                <div class="colstyle" style="text-align: justify; width: 60%">
+                  <h3 class="fw-bold mb-3 title" style="line-height: 50px">
+                    {{ title }}
+                  </h3>
+                  <hr class="line" />
+                  <p class="mb-4">
+                    {{ description }}
+                  </p>
+                  <a
+                    class="mgroup"
+                    style="
+                      float: right;
+                      color: deeppink;
+                      background-color: #b2e3ff;
+                      border-radius: 24px;
+                      padding: 5px 35px 5px 35px;
+                    "
+                    ><img src="@/assets/photos/www.svg" /> انجاز عالمي
+                  </a>
                 </div>
               </div>
-            </swiper-slide>
-          </swiper>
-        </div>
+              <div class="col-12 col-lg-6">
+                <div style="position: relative">
+                  <img
+                    src="@/assets/photos/Rectangle_5.svg"
+                    style="width: 100%"
+                  />
+                  <div class="sticker">
+                    <img src="@/assets/photos/Vector_6.svg" />
+                    <h5 class="fw-bold text-white" style="margin-top: -70px">
+                      {{ text.title }}
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
-
       <a
         style="text-align: left; line-height: 50px; color: #d2398d"
         href="#/Achievemnet"
         ><p class="fw-bold more">المزيد ..</p></a
       >
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -166,7 +167,9 @@ export default {
   background-image: url("@/assets/photos/back_1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 60px;
+}
+.section {
+  padding-top: 100px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -193,7 +196,7 @@ export default {
   }
   .sticker {
     position: absolute;
-    top: -50px;
+    top: -36px;
     left: 120px;
     width: 100%;
     height: 100%;

@@ -1,17 +1,17 @@
 <template>
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <div class="footer">
+  <div class="footer" style="position: relative">
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white container">
       <!-- Grid container -->
-      <div class="container p-4 pb-0">
+      <div class="pb-0">
         <!-- Section: Links -->
         <section class="">
           <!--Grid row-->
-          <div class="row">
+          <div class="row pt-4">
             <!-- Grid column -->
             <div
-              class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"
+              class="col-7 col-md-2 col-lg-3 col-xl-3 mx-auto mt-3"
               style="text-align: right"
             >
               <a href="">
@@ -28,7 +28,7 @@
                 </p>
               </div>
 
-              <div>
+              <div class="nile">
                 <p class="title">
                   <span><img src="@/assets/photos/Call.svg" /></span> الهاتف
                 </p>
@@ -57,10 +57,10 @@
             </div>
             <!-- Grid column -->
 
-            <hr class="w-100 clearfix d-md-none" />
+            <!-- <hr class="w-100 clearfix d-md-none" /> -->
 
             <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto Deta">
+            <div class="col-5 col-md-2 col-lg-2 col-xl-2 mx-auto Deta">
               <p class="title">أقسام الموقع</p>
               <ul class="d-flex flex-column gap-3">
                 <li><a href="" class="lin">البطولات</a></li>
@@ -72,7 +72,7 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 Deta">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 Detaa">
               <h6
                 class="text-uppercase mb-4 font-weight-bold"
                 style="text-align: right; line-height: 35px"
@@ -90,11 +90,21 @@
             </div>
 
             <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none" />
+            <!-- <hr class="w-100 clearfix d-md-none" /> -->
 
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <img src="@/assets/photos/footerimg.svg" alt="" class="footerr" />
+            <div class="ima col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <img
+                src="@/assets/photos/footerimg.svg"
+                alt=""
+                class="footerr"
+                style="
+                  margin-top: 45px;
+                  padding-right: 56px;
+                  margin-top: 45px;
+                  padding-right: 56px;
+                "
+              />
             </div>
             <!-- Grid column -->
           </div>
@@ -107,7 +117,7 @@
             <!-- Grid column -->
             <div class="text-center">
               <!-- Copyright -->
-              <div class="p-3">
+              <div class="p p-3">
                 جميع الحقوق محفوظة لدى الإتحاد السعودي للروبوت والرياضات
                 اللاسلكية SAUDI_RRC 2023
               </div>
@@ -136,6 +146,9 @@ export default {
 </script>
 
 <style scoped>
+footer {
+  margin-top: -100px;
+}
 .title {
   color: #3a9bd6;
   font-size: 14px;
@@ -154,6 +167,9 @@ export default {
   text-align: right;
 }
 .Deta {
+  padding-top: 125px;
+}
+.Detaa {
   padding-top: 125px;
 }
 .lin {
@@ -188,15 +204,39 @@ ul {
   padding: 10px;
   border-radius: 15px;
 }
-.footer {
-  background: url("@/assets/photos/Rectangle.svg");
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain, cover;
-  padding: 3%;
+.footer {
+  background: linear-gradient(180deg, #022c48 0%, #306386 100%);
+
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
 }
 .footerr {
   width: 90%;
+}
+.ima {
+}
+@media only screen and (max-width: 991px) {
+  .new_button2 {
+    display: block;
+  }
+  .new_button1 {
+    display: none;
+  }
+  .nile {
+    padding-top: 50px;
+  }
+  .footerr {
+    display: none;
+  }
+  .Detaa {
+    padding-top: 10px !important;
+  }
+  .p {
+    font-size: 12px;
+  }
+  .footer {
+    background: linear-gradient(180deg, #022c48 0%, #306386 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 </style>

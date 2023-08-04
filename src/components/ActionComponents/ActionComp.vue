@@ -1,5 +1,5 @@
 <template>
-  <section class="container pt-5">
+  <section class="container pt-5" style="margin-bottom: 200px">
     <div class="d-flex gap-3 mb-4 mt-3 pt-5">
       <img src="@/assets/photos/home(2).svg" />
       <a href="#/action" class="link"> &nbsp;الفعاليات</a>
@@ -10,10 +10,11 @@
     >
       <img class="card-img-top" src="@/assets/photos/Action1.jpg" alt="Title" />
       <div class="card-body">
-        <div class="d-flex gap-5 align-items-center">
+        <div class="d-flex gap-3 gap-md-5 align-items-center">
           <div class="">
             <div style="width: 100px">
               <div
+                class="sect"
                 style="
                   padding-left: 12px;
                   padding-right: 12px;
@@ -27,6 +28,7 @@
                   align-items: center;
                   gap: 8px;
                   display: inline-flex;
+                  width: 100% !;
                 "
               >
                 <p
@@ -53,7 +55,7 @@
                   style="
                     text-align: center;
                     color: #306386;
-                    font-size: 18px;
+                    font-size: 15px;
                     font-family: Cairo;
                     font-weight: 400;
                     line-height: 28px;
@@ -67,10 +69,10 @@
           </div>
           <div style="position: relative">
             <h4
-              class="card-title"
+              class="titlee card-title"
               style="
                 color: #306386;
-                width: 50%;
+
                 font-weight: bold;
                 line-height: 40px;
               "
@@ -78,6 +80,7 @@
               بطولة الأولمبياد العالمي للروبوت
             </h4>
             <img
+              class="sshap"
               src="@/assets/photos/Group_15.svg"
               style="position: absolute; right: -20px; top: 37px; width: 80px"
             />
@@ -91,7 +94,7 @@
           padding-left: 30px;
           color: #d2398d;
         "
-        href="#/Event"
+        href="/Event"
         ><p class="fw-bold">المزيد ..</p></a
       >
     </div>
@@ -101,7 +104,7 @@
     >
       <img class="card-img-top" src="@/assets/photos/Action2.jpg" alt="Title" />
       <div class="card-body">
-        <div class="d-flex gap-5 align-items-center">
+        <div class="d-flex gap-3 gap-md-5 align-items-center">
           <div class="">
             <div style="width: 100px">
               <div
@@ -144,7 +147,7 @@
                   style="
                     text-align: center;
                     color: #306386;
-                    font-size: 18px;
+                    font-size: 15px;
                     font-family: Cairo;
                     font-weight: 400;
                     line-height: 28px;
@@ -158,10 +161,10 @@
           </div>
           <div style="position: relative">
             <h4
-              class="card-title"
+              class="card-title titlee"
               style="
                 color: #306386;
-                width: 50%;
+                text-align: right;
                 font-weight: bold;
                 line-height: 40px;
               "
@@ -169,6 +172,7 @@
               الإتحاد يطلق بطولة الطائرات اللاسلكية
             </h4>
             <img
+              class="sshap"
               src="@/assets/photos/Group_15.svg"
               style="position: absolute; right: -20px; top: 37px; width: 80px"
             />
@@ -188,3 +192,24 @@
     </div>
   </section>
 </template>
+<style>
+.titlee {
+  width: 50%;
+}
+.sect {
+}
+@media only screen and (max-width: 991px) {
+  .titlee {
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px !important;
+    text-align: right;
+  }
+  .sshap {
+    display: none;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+}
+</style>

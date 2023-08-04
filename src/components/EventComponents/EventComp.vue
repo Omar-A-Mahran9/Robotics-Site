@@ -1,5 +1,5 @@
 <template>
-  <section class="main">
+  <section class="main" style="margin-bottom: 200px">
     <div
       class="card border-0 mb-5 pt-5"
       style="background: #e2f4fe; border-radius: 16px; overflow: hidden"
@@ -178,10 +178,10 @@
 
     <div style="position: relative">
       <div class="modal-content">
-        <h4 class="fw-bold pt-5 text-center">
+        <h4 class="fw-bold pt-5 mb-5 text-center">
           يرجى تعبئة النموذج للتسجيل في البرنامج
         </h4>
-        <form class="pe-5 ps-5 pb-5">
+        <form class="pe-md-5 pe-2 ps-2 ps-md-5 pb-5">
           <input
             type="text"
             class="mb-3 form-control"
@@ -261,6 +261,7 @@ export default {
 </script>
 <style scoped>
 .modal-content {
+  align-items: center;
   position: relative;
   background: linear-gradient(180deg, #65bdfa 0%, #306386 100%);
   box-shadow: 0px 4px 30px #3ba3da;
@@ -268,5 +269,7 @@ export default {
   border-radius: 16px;
   overflow: hidden;
   color: white;
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -1,16 +1,18 @@
 <template>
   <div class="container mt-5">
     <div class="row">
-      <div class="col" style="position: relative">
+      <div class="col-12 col-md-6" style="position: relative">
         <div class="mb-5">
           <a class="senddd" style="float: right">أبطالنا</a>
         </div>
         <img
+          class="sha"
           src="@/assets/photos/Group_15.svg"
           style="position: absolute; right: 0px; top: 85px; width: 70px"
         />
 
         <h4
+          class="head"
           style="
             font-weight: bold;
             text-align: right;
@@ -22,6 +24,7 @@
           تعرف على ابطالنا عن قرب
         </h4>
         <p
+          class="head"
           style="
             text-align: right;
             line-height: 30px;
@@ -32,13 +35,14 @@
           نفتخر في الاتحاد بأبطالنا المتميزين في جميع البطولات بكافة فئاتها.
         </p>
       </div>
-      <div class="col">
+      <div class="col-12 col-md-6">
         <div style="position: relative">
           <img
+            class="ig"
             src="@/assets/photos/boy.svg"
             style="position: absolute; right: 1px"
           />
-          <img src="@/assets/photos/girl_copy.svg" />
+          <img class="ig" src="@/assets/photos/girl_copy.svg" />
         </div>
       </div>
     </div>
@@ -55,5 +59,17 @@
   text-decoration: none;
   color: #d2398d;
   font-weight: bold;
+}
+.sha {
+  display: none;
+}
+.head {
+  width: 100% !important;
+}
+@media only screen and (max-width: 991px) {
+  .ig {
+    margin-left: -102px;
+    margin-right: -28px;
+  }
 }
 </style>
