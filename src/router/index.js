@@ -10,9 +10,11 @@ import Motivate from "@/views/MotivateView.vue";
 import News from "@/views/NewsView.vue";
 import Event from "@/views/EventView.vue";
 import Heroes from "@/views/HeroesView.vue";
+import NotFound from "@/views/NotFound.vue";
+
 const routes = [
   {
-    path: "/",
+    path: "/dist/",
     name: "Home",
     component: Home,
     meta: {
@@ -22,7 +24,7 @@ const routes = [
   },
 
   {
-    path: "/about",
+    path: "/dist/about",
     name: "about",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -37,7 +39,7 @@ const routes = [
   },
 
   {
-    path: "/achievemnet",
+    path: "/dist/achievemnet",
     name: "achievemnet",
     component: Achievemnet,
     meta: {
@@ -46,7 +48,7 @@ const routes = [
     },
   },
   {
-    path: "/motivate",
+    path: "/dist/motivate",
     name: "motivat",
     component: Motivate,
     meta: {
@@ -55,7 +57,7 @@ const routes = [
     },
   },
   {
-    path: "/action",
+    path: "/dist/action",
     name: "action",
     component: Action,
     meta: {
@@ -64,7 +66,7 @@ const routes = [
     },
   },
   {
-    path: "/report",
+    path: "/dist/report",
     name: "report",
     component: Reports,
     meta: {
@@ -73,7 +75,7 @@ const routes = [
     },
   },
   {
-    path: "/event",
+    path: "/dist/event",
     name: "event",
     component: Event,
     meta: {
@@ -82,7 +84,7 @@ const routes = [
     },
   },
   {
-    path: "/news",
+    path: "/dist/news",
     name: "news",
     component: News,
     meta: {
@@ -91,7 +93,7 @@ const routes = [
     },
   },
   {
-    path: "/heroes",
+    path: "/dist/heroes",
     name: "heroes",
     component: Heroes,
     meta: {
@@ -101,9 +103,18 @@ const routes = [
   },
 
   {
-    path: "/contact",
+    path: "/dist/contact/:pathName(.*)*",
     name: "contact",
     component: Contact,
+    meta: {
+      title: " ",
+      photo: "  ",
+    },
+  },
+  {
+    path: "/:pathName(.*)*",
+    name: "NotFound",
+    component: NotFound,
     meta: {
       title: " ",
       photo: "  ",
