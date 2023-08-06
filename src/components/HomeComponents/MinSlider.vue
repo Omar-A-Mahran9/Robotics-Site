@@ -139,8 +139,8 @@
             </div>
           </div>
           <div class="d-flex justify-content-center mt-3">
-            <a href="#"><img src="@/assets/photos/RightArrow.svg" /></a>
-            <a href="#"><img src="@/assets/photos/leftarrrow.svg" /></a>
+            <a href=""><img src="@/assets/photos/RightArrow.svg" /></a>
+            <a href=""><img src="@/assets/photos/leftarrrow.svg" /></a>
           </div>
         </div>
       </div>

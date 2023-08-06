@@ -11,7 +11,7 @@
   >
     <div class="container">
       <div>
-        <router-link to="/" class="navbar-brand" href="#/"
+        <router-link to="/" class="navbar-brand"
           ><img src="@/assets/photos/logo.svg"
         /></router-link>
       </div>
@@ -29,7 +29,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="home">
-          <router-link :to="{ name: 'Home' }" @click="changeColor" href="#/">
+          <router-link :to="{ name: 'Home' }" @click="changeColor">
             <img src="@/assets/photos/HomeVector.svg" />
             <p style="padding-top: 10px"></p
           ></router-link>
@@ -120,7 +120,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .contact {
   color: white;
   font-size: 16px;

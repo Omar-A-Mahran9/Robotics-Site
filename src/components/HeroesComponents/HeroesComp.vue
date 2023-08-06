@@ -2,7 +2,7 @@
   <section class="container pt-5">
     <div class="d-flex gap-3 mb-4 pt-5">
       <img src="@/assets/photos/home(2).svg" />
-      <a href="#/action" class="link"> &nbsp;أبطالنا</a>
+      <p class="link">&nbsp;أبطالنا</p>
     </div>
     <div class="container mt-5">
       <div class="row">
@@ -98,10 +98,10 @@
           </div>
         </div>
       </div>
-      <a
+      <router-link
+        :to="{ name: 'heroes' }"
         style="line-height: 50px; text-align: left; color: #ffffff"
-        href="#/heroes"
-        ><p class="fw-bold">المزيد ..</p></a
+        ><p class="fw-bold">المزيد ..</p></router-link
       >
     </div>
   </section>

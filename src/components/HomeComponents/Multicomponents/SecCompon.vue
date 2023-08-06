@@ -21,7 +21,7 @@
       <div class="col">
         <div class="d-flex flex-column gap-3">
           <div class="d-flex gap-3 justify-content-between">
-            <a href="#">
+            <router-link :to="{ name: 'action' }">
               <div
                 style="
                   padding-top: 16px;
@@ -37,8 +37,8 @@
                 <h6 class="mt-3" style="color: #306386">الطائرات اللاسلكية</h6>
                 <p style="color: #d2398d">المزيد ...</p>
               </div>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link :to="{ name: 'action' }">
               <div
                 style="
                   padding-top: 16px;
@@ -53,7 +53,7 @@
                 <img src="@/assets/photos/vector3.svg" />
                 <h6 class="mt-3" style="color: #306386">السيارات اللاسلكية</h6>
               </div>
-            </a>
+            </router-link>
           </div>
           <div
             style="

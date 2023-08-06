@@ -53,15 +53,15 @@
       <div v-show="videos">
         <seccomp3 />
       </div>
-      <a
+      <router-link
+        :to="{ name: 'action' }"
         style="
           line-height: 50px;
           text-align: center;
           padding-left: 30px;
           color: #d2398d;
         "
-        href="#/Action"
-        ><p class="fw-bold mt-4">المزيد ..</p></a
+        ><p class="fw-bold mt-4">المزيد ..</p></router-link
       >
     </div>
   </section>

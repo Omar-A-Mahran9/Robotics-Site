@@ -2,7 +2,7 @@
   <section class="pt-5">
     <div class="d-flex gap-3 mb-4 mt-3 pt-5 container">
       <img src="@/assets/photos/home(2).svg" />
-      <a href="" class="link"> &nbsp;الأخبار</a>
+      <p class="lino mt-3">&nbsp; الأخبار</p>
     </div>
     <div class="container" style="position: relative">
       <img src="@/assets/photos/image111.svg" width="100%" />
@@ -73,6 +73,12 @@
   </section>
 </template>
 <style scoped>
+.lino {
+  color: #d63384;
+  border: 2px solid #d63384;
+  border-radius: 26px;
+  padding: 4px 20px;
+}
 .res {
   width: 72%;
 }

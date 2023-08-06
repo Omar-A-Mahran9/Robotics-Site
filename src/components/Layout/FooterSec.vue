@@ -14,9 +14,9 @@
               class="col-7 col-md-2 col-lg-3 col-xl-3 mx-auto mt-3"
               style="text-align: right"
             >
-              <a href="">
+              <router-link :to="{ name: 'home' }">
                 <img class="mb-4" src="@/assets/photos/image_14.svg"
-              /></a>
+              /></router-link>
               <div class="mb-4">
                 <p class="title">
                   <span><img src="@/assets/photos/Location.svg" /></span>
@@ -63,10 +63,26 @@
             <div class="col-5 col-md-2 col-lg-2 col-xl-2 mx-auto Deta">
               <p class="title">أقسام الموقع</p>
               <ul class="d-flex flex-column gap-3">
-                <li><a href="" class="lin">البطولات</a></li>
-                <li><a href="" class="lin">المركز الإعلامي</a></li>
-                <li><a href="" class="lin">عن الإتحاد</a></li>
-                <li><a href="" class="lin">الفعاليات</a></li>
+                <li>
+                  <router-link :to="{ name: 'achievemnet' }" class="lin"
+                    >البطولات</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'motivate' }">
+                    class="lin">المركز الإعلامي</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'about' }" class="lin"
+                    >عن الإتحاد</router-link
+                  >
+                </li>
+                <li>
+                  <router-link :to="{ name: 'action' }" class="lin"
+                    >الفعاليات</router-link
+                  >
+                </li>
               </ul>
             </div>
             <!-- Grid column -->

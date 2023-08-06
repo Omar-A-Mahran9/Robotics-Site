@@ -19,7 +19,7 @@
       >
         <div class="card-body">
           <div class="mb-4 me-1 mt-3" style="text-align: right">
-            <a href="" class="link"> &nbsp; الفاعليات </a>
+            <p class="lino" style="width: 30%">&nbsp; الفاعليات</p>
           </div>
           <div
             class="d-flex gap-5 align-items-center justify-content-between ps-4 pe-4"
@@ -260,6 +260,12 @@ export default {
 };
 </script>
 <style scoped>
+.lino {
+  color: #d63384;
+  border: 2px solid #d63384;
+  border-radius: 26px;
+  padding: 4px 20px;
+}
 .modal-content {
   align-items: center;
   position: relative;

@@ -79,10 +79,10 @@
           </swiper-slide>
         </swiper>
       </div>
-      <a
+      <router-link
+        :to="{ name: 'achievemnet' }"
         style="text-align: left; line-height: 50px; color: #d2398d"
-        href="#/Achievemnet"
-        ><p class="fw-bold more">المزيد ..</p></a
+        ><p class="fw-bold more">المزيد ..</p></router-link
       >
     </div>
   </section>

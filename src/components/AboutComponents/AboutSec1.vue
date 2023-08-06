@@ -35,7 +35,9 @@
           class="d-flex gap-2 align-items-center justify-content-center"
           style="color: #d2398d"
         >
-          <a href="/"><img src="@/assets/photos/home(2).svg" /></a>
+          <router-link :to="{ name: 'Home' }"
+            ><img src="@/assets/photos/home(2).svg"
+          /></router-link>
           <a @click="about" :class="lin" class="link"
             ><img src="@/assets/photos/Group_11.svg" /> &nbsp; عن الاتحاد
           </a>

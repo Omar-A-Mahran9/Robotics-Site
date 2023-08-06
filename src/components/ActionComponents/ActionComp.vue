@@ -2,7 +2,7 @@
   <section class="container pt-5" style="margin-bottom: 200px">
     <div class="d-flex gap-3 mb-4 mt-3 pt-5">
       <img src="@/assets/photos/home(2).svg" />
-      <a href="#/action" class="link"> &nbsp;الفعاليات</a>
+      <p class="lino">&nbsp;الفعاليات</p>
     </div>
     <div
       class="card border-0 mb-5"
@@ -87,15 +87,15 @@
           </div>
         </div>
       </div>
-      <a
+      <router-link
         style="
           margin-top: -40px;
           text-align: left;
           padding-left: 30px;
           color: #d2398d;
         "
-        href="/Event"
-        ><p class="fw-bold">المزيد ..</p></a
+        :to="{ name: 'event' }"
+        ><p class="fw-bold">المزيد ..</p></router-link
       >
     </div>
     <div
@@ -179,20 +179,27 @@
           </div>
         </div>
       </div>
-      <a
+      <router-link
+        :to="{ name: 'action' }"
         style="
           margin-top: -40px;
           text-align: left;
           padding-left: 30px;
           color: #d2398d;
         "
-        href="#/Action"
-        ><p class="fw-bold">المزيد ..</p></a
+      >
+        <p class="fw-bold">المزيد ..</p></router-link
       >
     </div>
   </section>
 </template>
 <style>
+.lino {
+  color: #d63384;
+  border: 2px solid #d63384;
+  border-radius: 26px;
+  padding: 4px 20px;
+}
 .titlee {
   width: 50%;
 }

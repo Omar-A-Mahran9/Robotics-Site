@@ -139,9 +139,12 @@
       </div>
     </div>
 
-    <a style="line-height: 50px; color: #d2398d" href="#/Achievemnet"
-      ><p class="fw-bold">المزيد ..</p></a
+    <router-link
+      :to="{ name: 'achievemnet' }"
+      style="line-height: 50px; color: #d2398d"
     >
+      <p class="fw-bold">المزيد ..</p>
+    </router-link>
   </section>
 
   <!-- <div style="position: relative; margin-top: -420px; left: 190px">

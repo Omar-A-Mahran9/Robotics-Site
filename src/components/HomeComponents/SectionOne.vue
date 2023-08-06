@@ -70,10 +70,11 @@
               <img src="@/assets/photos/Vector.svg" /> الثلاثاء 13 / 4 / 2023
             </div>
             <div>
-              <a
+              <router-link
+                :to="{ name: 'news' }"
                 style="line-height: 50px; padding-left: 30px; color: #d2398d"
-                href="/News"
-                ><p class="fw-bold">المزيد ..</p></a
+              >
+                <p class="fw-bold">المزيد ..</p></router-link
               >
             </div>
           </div>

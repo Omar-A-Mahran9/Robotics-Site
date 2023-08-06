@@ -3,7 +3,7 @@
     <div class="container pt-5">
       <div class="d-flex gap-3 mb-5 pt-5">
         <img src="@/assets/photos/home(2).svg" />
-        <a href="" class="link"> &nbsp; التقارير </a>
+        <p class="lino mt-3">&nbsp;التقارير</p>
       </div>
       <div
         class="card mb-5 respom"
@@ -87,6 +87,12 @@
   </section>
 </template>
 <style>
+.lino {
+  color: #d63384;
+  border: 2px solid #d63384;
+  border-radius: 26px;
+  padding: 4px 20px;
+}
 .link {
   padding: 6px 30px 6px 30px;
 

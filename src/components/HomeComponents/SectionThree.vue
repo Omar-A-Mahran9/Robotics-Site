@@ -61,7 +61,8 @@
         </div>
       </swiper-slide>
     </swiper>
-    <a
+    <router-link
+      :to="{ name: 'heroes' }"
       style="
         text-align: left;
         color: rgb(255, 255, 255);
@@ -74,8 +75,7 @@
         text-align: left;
         color: #ffffff;
       "
-      href="#/heroes"
-      ><p class="fw-bold">المزيد ..</p></a
+      ><p class="fw-bold">المزيد ..</p></router-link
     >
   </div>
 </template>

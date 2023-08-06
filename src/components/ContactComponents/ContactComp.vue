@@ -2,7 +2,7 @@
   <section class="container pt-5" style="margin-bottom: 200px">
     <div class="d-flex gap-3 mb-4 mt-3 pt-5">
       <img src="@/assets/photos/home(2).svg" />
-      <a href="" class="link"> &nbsp;اتصل بنا</a>
+      <p class="link">&nbsp;اتصل بنا</p>
     </div>
 
     <div class="row">
@@ -102,9 +102,7 @@
             class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3"
             style="text-align: right"
           >
-            <a href="">
-              <img class="mb-4" src="@/assets/photos/image_14.svg"
-            /></a>
+            <a> <img class="mb-4" src="@/assets/photos/image_14.svg" /></a>
 
             <div>
               <div class="mb-4">
